@@ -1,0 +1,20 @@
+{
+  "name": "light-css",
+  "version": "1.0.0",
+  "description": "css framework",
+  "engine": "node >= 0.10.0",
+  "author": "The VitalVas",
+  "scripts": {
+    "build": "mkdir -p dst && npm run build-full && npm run build-small",
+    "build-full": "./node_modules/.bin/lessc src/main.less dst/light.css",
+    "build-small": "./node_modules/.bin/lessc --clean-css src/main.less dst/light.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitalvas/light-css.git"
+  },
+  "dependencies": {
+    "less": "~2.5.0",
+    "less-plugin-clean-css": ">=1.5.0"
+  }
+}
