@@ -5,6 +5,7 @@
   "engine": "node >= 0.10.0",
   "author": "The VitalVas",
   "scripts": {
+    "test": "true",
     "build": "mkdir -p dst && npm run build-full && npm run build-small",
     "build-full": "./node_modules/.bin/lessc src/main.less dst/light.css",
     "build-small": "./node_modules/.bin/lessc --clean-css src/main.less dst/light.min.css"
