@@ -13,8 +13,12 @@
             cel.innerHTML = "TH-" + c;
         }
     }
+    var classes = ['success', 'info', 'warning', 'danger'];
     for (var i=0; i<rows; i++) {
         var row = tbody.insertRow(i);
+        if (classes.length > i) {
+            row.className = classes[i];
+        }
         for (var c=0; c<=cels; c++) {
             var cel = row.insertCell(c);
             if (c == 0) {
